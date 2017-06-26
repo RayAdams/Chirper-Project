@@ -1,0 +1,41 @@
+.jumbotron {
+   text-align: center;
+   background-color: #dcd0c0;
+}
+
+#textbox {
+    display: inline-block
+}
+
+.text {
+    position: center;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 5em;
+}
+
+div .container {
+    background-color: #f4f4f4;
+}
+
+#user-selector{
+    background-color: #c0b283;
+    color: #373737;
+}
+
+#chirp-btn {
+    background-color: #c0b283;
+    color: #373737;
+}
+
+#chirp-list {
+    color: #373737;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+body {
+    color: #c0b283;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+}
