@@ -39,3 +39,15 @@ body {
     color: #c0b283;
     font-family: Trebuchet MS, Helvetica, sans-serif;
 }
+
+img {
+    padding-left: 4px;
+}
+
+.delete-btn{
+    float: right;
+}
+
+button {
+    cursor: pointer;
+}

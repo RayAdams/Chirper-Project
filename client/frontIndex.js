@@ -50,7 +50,11 @@ var $chirpDiv = $('<div class="chirp"></div>');
     var $user = $('<h4></h4>');            
     var $message = $('<p></p>');
     var $timestamp = $('<h5></h5>');
-    var $deleteBtn = $('<button class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i>DELETE</button>');
+    var $viewBtn = $('<button class="btn btn-primary btn-xs edit-btn"><i class="glyphicon glyphicon-zoom-in" aria-hidden="true"></i>VIEW</button>');
+    var $deleteBtn = $('<button class="btn btn-danger btn-xs delete-btn"><i class="fa fa-trash-o"></i>DELETE</button>');
+    $viewBtn.on('click', function() {
+        window.location.replace('http://localhost:3000/chirps/' + chirp.id);
+    })
     $deleteBtn.click(function() {
         deleteChirp(chirp.id);
     });
@@ -62,6 +66,7 @@ var $chirpDiv = $('<div class="chirp"></div>');
     $user.appendTo($chirpDiv);
     $message.appendTo($chirpDiv);
     $timestamp.appendTo($chirpDiv);
+    $viewBtn.appendTo($chirpDiv);
     $deleteBtn.appendTo($chirpDiv);
 
     $chirpDiv.appendTo($chirpList);

@@ -16,6 +16,23 @@ var app = express();
 app.use(express.static(clientPath));
 app.use(bodyParser.json());
 
+//load landing page
+app.get('/', function(req,res){
+    res.sendFile(path.join(clientPath, 'index.html'));
+});
+//load all chirps page
+app.get('/chirps', function(req,res){
+    res.sendFile(path.join(clientPath, 'list.html'));
+});
+//load single update page
+app.get('/chirps/*/update', function(req,res){
+    res.sendFile(path.join(clientPath, 'single_update.html'));
+});
+//load single view page
+app.get('/chirps/*', function(req,res){
+    res.sendFile(path.join(clientPath, 'single_view.html'));
+});
+
 //GET ALL
 app.get('/api/chirps', function(req, res){
     rows('GetChirps')
