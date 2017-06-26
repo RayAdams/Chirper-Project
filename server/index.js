@@ -71,8 +71,8 @@ app.put('/api/chirps/:id', function(req, res) {
     empty('UpdateChirp', [req.body.message, req.params.id])
     .then(function() {
         res.sendStatus(204);
-    }).catch(function(err) {
-        console.log(err);
+    }).catch(function(err, err2, err3) {
+        console.log(err, err2, err3);
         res.sendStatus(500);
     });
 });

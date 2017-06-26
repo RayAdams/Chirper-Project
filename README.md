@@ -11,7 +11,7 @@
 * So far, Chirp Express displays a list of chirps when users go to http://localhost:3000
     * The page shown has a form with an input field for typing a chirp message, a dropdown for selecting a user, and a button for sending the chirp
     * The user selector is populated when the page first loads by making a GET request to the API for a list of users
-* This project will expand upon that functionality
+* This project will expand upon that functionality-->
 
 ## Objectives - Application
 * In your client folder, create a file called single_view.html
@@ -52,7 +52,7 @@
     * deleting a single chirp - Looks at the id route parameter and deletes the chirp in the db that has that id
 * If you haven't already, write the stored procedures in your Chirper MySQL database to perform these RESTful actions
 
-## Tips/Hints
+<!--## Tips/Hints
 * You may find `window.location.pathname` useful to use on the front-end
 * This project exposes you to the concept that Express lets you craft arbitrary routes
     * We are arbitrarily choosing to respond to `/chirps` with list.html
